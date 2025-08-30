@@ -1,0 +1,14 @@
+{
+  "name": "@relic-erp/server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
