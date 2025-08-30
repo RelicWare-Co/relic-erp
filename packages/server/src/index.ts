@@ -1,7 +1,6 @@
 import { Hono } from 'hono'
 import { cors } from 'hono/cors' 
 import { RPCHandler } from '@orpc/server/fetch'
-import { usersTable } from '@db/schema.js';
 import { router } from './helloRouter.js'
 import db from '@db/db.js';
 
@@ -10,7 +9,6 @@ app.use(cors({
   origin: 'http://localhost:5173',
 }))
 
-console.log(await db.select().from(usersTable))
 app.get('/', async (c) => {
   return c.json({ message: 'Hello, World!' })
 })
