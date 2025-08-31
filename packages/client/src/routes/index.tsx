@@ -20,7 +20,7 @@ function Index() {
 			<button type="button" onClick={() => authClient.signUp.email({
 				name: "Verzach3",
 				email: "verzach3@emailemail.com",
-				password: "Codorniz1",
+				password: "",
 			})}>Sign Up</button>
 		</div>
 	);
