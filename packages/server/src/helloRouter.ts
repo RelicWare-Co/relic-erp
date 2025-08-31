@@ -1,6 +1,7 @@
 import { os } from '@orpc/server'
 
-export const helloWorld = os.handler(async () => {
+export const helloWorld = os.handler(async ({ context }) => {
+  console.log(context)
   return 'hello world'
 })
 

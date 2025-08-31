@@ -6,8 +6,8 @@
     "dev": "bun run --filter '@relic-erp/*' dev",
     "dev:client": "bun --filter '@relic-erp/client' run dev",
     "dev:server": "bun --filter '@relic-erp/server' run dev",
-    "auth:generate": "bunx --bun @better-auth/cli generate --config ./packages/server/src/util/auth.ts --output ./packages/db/auth-schema.ts"
-    
+    "auth:generate": "bunx --bun @better-auth/cli generate --config ./packages/server/src/util/auth.ts --output ./packages/db/auth-schema.ts",
+    "db:migrate": "bunx drizzle-kit push"
   },
   "dependencies": {
     "@libsql/client": "^0.15.14",
